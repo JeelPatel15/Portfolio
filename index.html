@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
+    <div class="cursor"></div>
+    <div class="cursor-dot"></div>
+
     <!-- NAVIGATION -->
     <nav>
         <div class="nav-container">
@@ -25,24 +28,31 @@
     </nav>
 
     <!-- HERO SECTION -->
-    <section class="hero">
-        <div class="hero-content">
+    <section id="hero" class="hero">
+        <canvas id="particle-canvas"></canvas>
+        <div class="hero-content glass">
             <h1 class="hero-title">
-                I’m <span class="hero-name">Jeel Patel</span>
+                Hi, <span class="hero-name" id="hero-name"></span>
             </h1>
             <p class="hero-subtitle">
                 Computer Programming & Analysis Student <br>
                 Building clean, scalable & impactful software
             </p>
-            
+
             <div class="cta-buttons">
                 <a href="projects.html" class="btn btn-primary">View My Work</a>
                 <a href="contact.html" class="btn btn-secondary">Get In Touch</a>
+                <a href="about.html" class="btn btn-primary">About Me</a>
+                <a href="skills.html" class="btn btn-secondary">Skills</a>
+                <a href="resume.html" class="btn btn-primary">Resume</a>
             </div>
 
-            <div class="scroll-indicator">
-                <i class="fas fa-chevron-down"></i>
+            <div class="hero-bg">
+                <span class="blob1"></span>
+                <span class="blob2"></span>
             </div>
+
+           
         </div>
     </section>
 
@@ -59,24 +69,24 @@
             </div>
             <div class="footer-section">
                 <h3>Quick Links</h3>
-                <a href="#projects">Featured Projects</a>
-                <a href="#skills">My Skills</a>
-                <a href="#contact">Contact Info</a>
+                <a href="projects.html#featured">Featured Projects</a>
+                <a href="skills.html">My Skills</a>
+                <a href="contact.html#contact-info">Contact Info</a>
                 <a href="#">Resume/CV</a>
             </div>
             <div class="footer-section">
                 <h3>Connect With Me</h3>
                 <div class="social-links">
-                    <a href="https://github.com" target="_blank" title="GitHub">
+                    <a href="https://github.com/JeelPatel15" target="_blank" title="GitHub">
                         <i class="fab fa-github"></i>
                     </a>
-                    <a href="https://linkedin.com" target="_blank" title="LinkedIn">
+                    <a href="https://www.linkedin.com/in/jeelpatel2/" target="_blank" title="LinkedIn">
                         <i class="fab fa-linkedin"></i>
                     </a>
-                    <a href="https://twitter.com" target="_blank" title="Twitter">
+                    <a href="https://x.com/jeelpatel000" target="_blank" title="Twitter">
                         <i class="fab fa-twitter"></i>
                     </a>
-                    <a href="mailto:your.email@gmail.com" title="Email">
+                    <a href="mailto:jeelpatel2161@gmail.com" title="Email">
                         <i class="fas fa-envelope"></i>
                     </a>
                 </div>
@@ -87,6 +97,8 @@
         </div>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/three@0.152.2/build/three.min.js"></script>
+    <script src="bg.js"></script>
     <script src="script.js"></script>
 </body>
 </html>

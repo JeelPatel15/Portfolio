@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
+    <canvas id="particle-canvas"></canvas>
+    <div class="cursor"></div>
+    <div class="cursor-dot"></div>
     <!-- NAVIGATION -->
     <nav>
         <div class="nav-container">
@@ -74,7 +77,7 @@
                 <div class="feature-box" style="margin-bottom: 2rem; border-left: 4px solid var(--accent-1);">
                     <h3 style="font-size: 1.2rem;">Computer Programming & Analysis</h3>
                     <p style="color: var(--accent-1); margin: 0.5rem 0;">Final Year Student</p>
-                    <p style="color: var(--text-muted); margin: 0.5rem 0;">Expected Graduation: 2025</p>
+                    <p style="color: var(--text-muted); margin: 0.5rem 0;">Expected Graduation: May 2026</p>
                     <p>Comprehensive curriculum covering software development, data structures, algorithms, web development, and database management.</p>
                 </div>
 
@@ -92,6 +95,76 @@
             </div>
         </div>
     </section>
+
+    <!-- AWARDS & CERTIFICATIONS SECTION -->
+<section class="section" style="background: linear-gradient(135deg, rgba(255, 223, 186, 0.05) 0%, rgba(255, 123, 123, 0.05) 100%);">
+    <div class="container">
+        <h2 class="section-title">Awards & Certifications</h2>
+        <div style="max-width: 800px; margin: 0 auto;">
+            
+            <div class="feature-box" style="margin-bottom: 1.5rem; border-left: 4px solid var(--accent-1);">
+                <h3>Honour Role - Winter 2025</h3>
+                <p style="color: var(--accent-1); margin: 0.3rem 0;">Issued by Durham College · Jun 2025</p>
+                <p style="color: var(--text-muted); margin: 0.3rem 0;">Associated with Durham College</p>
+            </div>
+
+            <div class="feature-box" style="margin-bottom: 1.5rem; border-left: 4px solid var(--accent-2);">
+                <h3>Honour Role - Fall 2024</h3>
+                <p style="color: var(--accent-2); margin: 0.3rem 0;">Issued by Durham College · Feb 2025</p>
+                <p style="color: var(--text-muted); margin: 0.3rem 0;">Associated with Durham College</p>
+            </div>
+
+            <div class="feature-box" style="margin-bottom: 1.5rem; border-left: 4px solid var(--accent-1);">
+                <h3>Honour Role - Fall 2025</h3>
+                <p style="color: var(--accent-1); margin: 0.3rem 0;">Issued by Durham College · Feb 2025</p>
+                <p style="color: var(--text-muted); margin: 0.3rem 0;">Associated with Durham College</p>
+            </div>
+
+            <div class="feature-box" style="margin-bottom: 1.5rem; border-left: 4px solid var(--accent-2);">
+                <h3>Honour Role - Winter 2024</h3>
+                <p style="color: var(--accent-2); margin: 0.3rem 0;">Issued by Durham College · Jun 2024</p>
+                <p style="color: var(--text-muted); margin: 0.3rem 0;">Associated with Durham College</p>
+            </div>
+
+            <div class="feature-box" style="border-left: 4px solid var(--accent-1);">
+                <h3>Honour Role - Fall 2023</h3>
+                <p style="color: var(--accent-1); margin: 0.3rem 0;">Issued by Durham College · Feb 2024</p>
+                <p style="color: var(--text-muted); margin: 0.3rem 0;">Associated with Durham College</p>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- LICENSES & CERTIFICATIONS SECTION -->
+<section class="section" style="background: linear-gradient(135deg, rgba(200, 255, 200, 0.05) 0%, rgba(100, 200, 255, 0.05) 100%);">
+    <div class="container">
+        <h2 class="section-title">Licenses & Certifications</h2>
+        <div style="max-width: 800px; margin: 0 auto;">
+
+            <div class="feature-box" style="margin-bottom: 1.5rem; border-left: 4px solid var(--accent-1);">
+                <h3><i class="fab fa-aws" style="margin-right: 0.5rem;"></i>AWS Academy Graduate - AWS Academy Cloud Foundations</h3>
+                <p style="color: var(--accent-1); margin: 0.3rem 0;">Amazon Web Services (AWS) · Issued Apr 2025</p>
+                <a href="https://www.credly.com/badges/2838ca5a-4bd0-4f1c-b09a-b041ba6e6e54/linked_in_profile" target="_blank" style="color: var(--accent-1); text-decoration: underline;">Show credential</a>
+            </div>
+
+            <div class="feature-box" style="margin-bottom: 1.5rem; border-left: 4px solid var(--accent-2);">
+                <h3><i class="fab fa-linkedin" style="margin-right: 0.5rem;"></i>Generative AI: The Evolution of Thoughtful Online Search</h3>
+                <p style="color: var(--accent-2); margin: 0.3rem 0;">LinkedIn · Issued Oct 2024</p>
+                <p style="color: var(--text-muted); margin: 0.3rem 0;">Skills: Search Engine Technology, Artificial Intelligence for Business</p>
+                <a href="https://www.linkedin.com/learning/certificates/b2fe2ee7c92a6c4a97c6661448cb7b9ee7ba08227e8120bfcf6728200c528696" target="_blank" style="color: var(--accent-2); text-decoration: underline;">Show credential</a>
+            </div>
+
+            <div class="feature-box" style="border-left: 4px solid var(--accent-1);">
+                <h3><i class="fab fa-linkedin" style="margin-right: 0.5rem;"></i>What Is Generative AI?</h3>
+                <p style="color: var(--accent-1); margin: 0.3rem 0;">LinkedIn · Issued Oct 2024</p>
+                <p style="color: var(--text-muted); margin: 0.3rem 0;">Skills: Artificial Intelligence (AI), Generative AI, +1 skill</p>
+                <a href="https://www.linkedin.com/learning/certificates/e281802b9bed6c7b541416abc8b4a07f7872946e60e0a1f1d98c86f8cfcb7e46" target="_blank" style="color: var(--accent-1); text-decoration: underline;">Show credential</a>
+            </div>
+
+        </div>
+    </div>
+</section>
 
     <!-- FOOTER -->
     <footer>
@@ -114,16 +187,16 @@
             <div class="footer-section">
                 <h3>Connect With Me</h3>
                 <div class="social-links">
-                    <a href="https://github.com" target="_blank" title="GitHub">
+                    <a href="https://github.com/JeelPatel15" target="_blank" title="GitHub">
                         <i class="fab fa-github"></i>
                     </a>
-                    <a href="https://linkedin.com" target="_blank" title="LinkedIn">
+                    <a href="https://www.linkedin.com/in/jeelpatel2/" target="_blank" title="LinkedIn">
                         <i class="fab fa-linkedin"></i>
                     </a>
-                    <a href="https://twitter.com" target="_blank" title="Twitter">
+                    <a href="https://x.com/jeelpatel000" target="_blank" title="Twitter">
                         <i class="fab fa-twitter"></i>
                     </a>
-                    <a href="mailto:your.email@gmail.com" title="Email">
+                    <a href="mailto:jeelpatel2161@gmail.com" title="Email">
                         <i class="fas fa-envelope"></i>
                     </a>
                 </div>

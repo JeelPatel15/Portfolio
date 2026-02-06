@@ -6,8 +6,17 @@
     <title>Contact - Jeel Patel Portfolio</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script>
+    (function(){
+        emailjs.init("1Oxz_Giq7maWQDgua"); 
+    })();
+    </script>
 </head>
 <body>
+    <canvas id="particle-canvas"></canvas>
+    <div class="cursor"></div>
+    <div class="cursor-dot"></div>
     <!-- NAVIGATION -->
     <nav>
         <div class="nav-container">
@@ -33,7 +42,7 @@
             <div class="contact-info">
                 <div class="info-box">
                     <h4><i class="fas fa-envelope"></i> Email</h4>
-                    <a href="mailto:jeel.patel@email.com">jeelpatel2161@gmail.com</a>
+                    <a href="mailto:jeelpatel2161@gmail.com">jeelpatel2161@gmail.com</a>
                 </div>                
                 <div class="info-box">
                     <h4><i class="fas fa-map-marker-alt"></i> Location</h4>
@@ -47,12 +56,12 @@
                     
                     <div class="form-group">
                         <label for="name">Full Name</label>
-                        <input type="text" id="name" name="name" placeholder="John Doe" required>
+                        <input type="text" id="name" name="from_name" placeholder="John Doe" required>
                     </div>
 
                     <div class="form-group">
                         <label for="email">Email Address</label>
-                        <input type="email" id="email" name="email" placeholder="you@example.com" required>
+                        <input type="email" id="email" name="from_email" placeholder="you@example.com" required>
                     </div>
 
                     <div class="form-group">
@@ -188,16 +197,16 @@
             <div class="footer-section">
                 <h3>Connect With Me</h3>
                 <div class="social-links">
-                    <a href="https://github.com" target="_blank" title="GitHub">
+                    <a href="https://github.com/JeelPatel15" target="_blank" title="GitHub">
                         <i class="fab fa-github"></i>
                     </a>
-                    <a href="https://linkedin.com" target="_blank" title="LinkedIn">
+                    <a href="https://www.linkedin.com/in/jeelpatel2/" target="_blank" title="LinkedIn">
                         <i class="fab fa-linkedin"></i>
                     </a>
-                    <a href="https://twitter.com" target="_blank" title="Twitter">
+                    <a href="https://x.com/jeelpatel000" target="_blank" title="Twitter">
                         <i class="fab fa-twitter"></i>
                     </a>
-                    <a href="mailto:jeel.patel@email.com" title="Email">
+                    <a href="mailto:jeelpatel2161@gmail.com" title="Email">
                         <i class="fas fa-envelope"></i>
                     </a>
                 </div>

@@ -8,8 +8,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
+    <canvas id="particle-canvas"></canvas>
+    <div class="cursor"></div>
+    <div class="cursor-dot"></div>
+
     <!-- NAVIGATION -->
-    <nav>
+    <nav>        
         <div class="nav-container">
             <a href="index.html" class="logo">
                 <i class="fas fa-code"></i> JP
@@ -24,345 +28,111 @@
         </div>
     </nav>
 
-    <!-- SKILLS SECTION -->
-    <section class="skills section" style="margin-top: 80px;">
-        <div class="container">
-            <h2 class="section-title">My Skills</h2>
-            <p class="section-subtitle">Technologies and languages I've mastered and actively use</p>
+    <section class="skills section">
+    <div class="container">
+        <h2 class="section-title">My Skills</h2>
+        <p class="section-subtitle">Technical and professional skills I use to build modern applications</p>
 
-            <div class="skills-grid">
-                <!-- Programming Languages -->
-                <div class="skill-category">
-                    <h3><i class="fas fa-code"></i> Programming Languages</h3>
-                    
-                    <div class="skill-item">
-                        <div class="skill-name">
-                            <span>Python</span>
-                            <span>95%</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-progress" style="width: 95%"></div>
-                        </div>
-                    </div>
+        <div class="skills-cards">
 
-                    <div class="skill-item">
-                        <div class="skill-name">
-                            <span>JavaScript</span>
-                            <span>90%</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-progress" style="width: 90%"></div>
-                        </div>
-                    </div>
-
-                    <div class="skill-item">
-                        <div class="skill-name">
-                            <span>Java</span>
-                            <span>85%</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-progress" style="width: 85%"></div>
-                        </div>
-                    </div>
-
-                    <div class="skill-item">
-                        <div class="skill-name">
-                            <span>C++</span>
-                            <span>80%</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-progress" style="width: 80%"></div>
-                        </div>
-                    </div>
-
-                    <div class="skill-item">
-                        <div class="skill-name">
-                            <span>SQL</span>
-                            <span>88%</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-progress" style="width: 88%"></div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Frontend Development -->
-                <div class="skill-category">
-                    <h3><i class="fas fa-paint-brush"></i> Frontend Development</h3>
-                    
-                    <div class="skill-item">
-                        <div class="skill-name">
-                            <span>React</span>
-                            <span>92%</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-progress" style="width: 92%"></div>
-                        </div>
-                    </div>
-
-                    <div class="skill-item">
-                        <div class="skill-name">
-                            <span>Vue.js</span>
-                            <span>85%</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-progress" style="width: 85%"></div>
-                        </div>
-                    </div>
-
-                    <div class="skill-item">
-                        <div class="skill-name">
-                            <span>HTML/CSS</span>
-                            <span>95%</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-progress" style="width: 95%"></div>
-                        </div>
-                    </div>
-
-                    <div class="skill-item">
-                        <div class="skill-name">
-                            <span>Tailwind CSS</span>
-                            <span>90%</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-progress" style="width: 90%"></div>
-                        </div>
-                    </div>
-
-                    <div class="skill-item">
-                        <div class="skill-name">
-                            <span>TypeScript</span>
-                            <span>85%</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-progress" style="width: 85%"></div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Backend Development -->
-                <div class="skill-category">
-                    <h3><i class="fas fa-server"></i> Backend Development</h3>
-                    
-                    <div class="skill-item">
-                        <div class="skill-name">
-                            <span>Node.js</span>
-                            <span>88%</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-progress" style="width: 88%"></div>
-                        </div>
-                    </div>
-
-                    <div class="skill-item">
-                        <div class="skill-name">
-                            <span>Express.js</span>
-                            <span>87%</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-progress" style="width: 87%"></div>
-                        </div>
-                    </div>
-
-                    <div class="skill-item">
-                        <div class="skill-name">
-                            <span>Spring Boot</span>
-                            <span>83%</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-progress" style="width: 83%"></div>
-                        </div>
-                    </div>
-
-                    <div class="skill-item">
-                        <div class="skill-name">
-                            <span>Django</span>
-                            <span>84%</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-progress" style="width: 84%"></div>
-                        </div>
-                    </div>
-
-                    <div class="skill-item">
-                        <div class="skill-name">
-                            <span>RESTful APIs</span>
-                            <span>90%</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-progress" style="width: 90%"></div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Database & Tools -->
-                <div class="skill-category">
-                    <h3><i class="fas fa-database"></i> Database & Tools</h3>
-                    
-                    <div class="skill-item">
-                        <div class="skill-name">
-                            <span>MongoDB</span>
-                            <span>86%</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-progress" style="width: 86%"></div>
-                        </div>
-                    </div>
-
-                    <div class="skill-item">
-                        <div class="skill-name">
-                            <span>PostgreSQL</span>
-                            <span>89%</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-progress" style="width: 89%"></div>
-                        </div>
-                    </div>
-
-                    <div class="skill-item">
-                        <div class="skill-name">
-                            <span>Firebase</span>
-                            <span>84%</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-progress" style="width: 84%"></div>
-                        </div>
-                    </div>
-
-                    <div class="skill-item">
-                        <div class="skill-name">
-                            <span>Git & GitHub</span>
-                            <span>92%</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-progress" style="width: 92%"></div>
-                        </div>
-                    </div>
-
-                    <div class="skill-item">
-                        <div class="skill-name">
-                            <span>Docker</span>
-                            <span>80%</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-progress" style="width: 80%"></div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Other Skills -->
-                <div class="skill-category">
-                    <h3><i class="fas fa-star"></i> Other Skills</h3>
-                    
-                    <div class="skill-item">
-                        <div class="skill-name">
-                            <span>AWS</span>
-                            <span>82%</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-progress" style="width: 82%"></div>
-                        </div>
-                    </div>
-
-                    <div class="skill-item">
-                        <div class="skill-name">
-                            <span>Machine Learning</span>
-                            <span>78%</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-progress" style="width: 78%"></div>
-                        </div>
-                    </div>
-
-                    <div class="skill-item">
-                        <div class="skill-name">
-                            <span>Agile/Scrum</span>
-                            <span>86%</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-progress" style="width: 86%"></div>
-                        </div>
-                    </div>
-
-                    <div class="skill-item">
-                        <div class="skill-name">
-                            <span>Testing & QA</span>
-                            <span>84%</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-progress" style="width: 84%"></div>
-                        </div>
-                    </div>
-
-                    <div class="skill-item">
-                        <div class="skill-name">
-                            <span>Problem Solving</span>
-                            <span>94%</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-progress" style="width: 94%"></div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Soft Skills -->
-                <div class="skill-category">
-                    <h3><i class="fas fa-handshake"></i> Soft Skills</h3>
-                    
-                    <div class="skill-item">
-                        <div class="skill-name">
-                            <span>Communication</span>
-                            <span>90%</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-progress" style="width: 90%"></div>
-                        </div>
-                    </div>
-
-                    <div class="skill-item">
-                        <div class="skill-name">
-                            <span>Team Collaboration</span>
-                            <span>92%</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-progress" style="width: 92%"></div>
-                        </div>
-                    </div>
-
-                    <div class="skill-item">
-                        <div class="skill-name">
-                            <span>Project Management</span>
-                            <span>86%</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-progress" style="width: 86%"></div>
-                        </div>
-                    </div>
-
-                    <div class="skill-item">
-                        <div class="skill-name">
-                            <span>Leadership</span>
-                            <span>84%</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-progress" style="width: 84%"></div>
-                        </div>
-                    </div>
-
-                    <div class="skill-item">
-                        <div class="skill-name">
-                            <span>Adaptability</span>
-                            <span>95%</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-progress" style="width: 95%"></div>
-                        </div>
-                    </div>
+            <!-- Programming Languages -->
+            <div class="skill-card glass">
+                <h3><i class="fas fa-code"></i> Programming Languages</h3>
+                <div class="skill-list">
+                    <span>C</span>
+                    <span>C++</span>
+                    <span>Java</span>
+                    <span>C#</span>
+                    <span>Python</span>
+                    <span>JavaScript</span>
+                    <span>SQL</span>
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>COBOL</span>
                 </div>
             </div>
+
+            <!-- Frontend Development -->
+            <div class="skill-card glass">
+                <h3><i class="fas fa-paint-brush"></i> Frontend Development</h3>
+                <div class="skill-list">
+                    <span>HTML/CSS</span>
+                    <span>JavaScript</span>
+                    <span>React</span>
+                    <span>Vue.js</span>
+                    <span>Tailwind CSS</span>
+                    <span>Bootstrap</span>
+                    <span>UI/UX Design</span>
+                </div>
+            </div>
+
+            <!-- Backend & Databases -->
+            <div class="skill-card glass">
+                <h3><i class="fas fa-server"></i> Backend & Databases</h3>
+                <div class="skill-list">
+                    <span>Node.js</span>
+                    <span>Express.js</span>
+                    <span>Spring Boot</span>
+                    <span>Django</span>
+                    <span>ASP.NET</span>
+                    <span>RESTful APIs</span>
+                    <span>MySQL</span>
+                    <span>PostgreSQL</span>
+                    <span>MongoDB</span>
+                    <span>Firebase</span>
+                </div>
+            </div>
+
+            <!-- Tools & DevOps -->
+            <div class="skill-card glass">
+                <h3><i class="fas fa-tools"></i> Tools & DevOps</h3>
+                <div class="skill-list">
+                    <span>Git & GitHub</span>
+                    <span>Docker</span>
+                    <span>VS Code</span>
+                    <span>Visual Studio</span>
+                    <span>PyCharm</span>
+                    <span>Postman</span>
+                    <span>Figma</span>
+                    <span>Azure</span>
+                    <span>IBM Developer for zOS</span>
+                </div>
+            </div>
+
+            <!-- Development Concepts -->
+            <div class="skill-card glass">
+                <h3><i class="fas fa-cogs"></i> Development Concepts</h3>
+                <div class="skill-list">
+                    <span>OOP</span>
+                    <span>MVC, MVP, MVVM</span>
+                    <span>Software Testing & QA</span>
+                    <span>Agile/Scrum</span>
+                    <span>SDLC</span>
+                    <span>Design Patterns</span>
+                    <span>TDD</span>
+                    <span>Cloud Fundamentals (AWS)</span>
+                </div>
+            </div>
+
+            <!-- Soft Skills -->
+            <div class="skill-card glass">
+                <h3><i class="fas fa-handshake"></i> Soft Skills</h3>
+                <div class="skill-list">
+                    <span>Communication</span>
+                    <span>Teamwork</span>
+                    <span>Problem Solving</span>
+                    <span>Adaptability</span>
+                    <span>Time Management</span>
+                    <span>Leadership</span>
+                    <span>Project Management</span>
+                    <span>Cross-Functional Collaboration</span>
+                </div>
+            </div>
+
         </div>
-    </section>
+    </div>
+</section>
+
 
     <!-- FOOTER -->
     <footer>
@@ -385,16 +155,16 @@
             <div class="footer-section">
                 <h3>Connect With Me</h3>
                 <div class="social-links">
-                    <a href="https://github.com" target="_blank" title="GitHub">
+                    <a href="https://github.com/JeelPatel15" target="_blank" title="GitHub">
                         <i class="fab fa-github"></i>
                     </a>
-                    <a href="https://linkedin.com" target="_blank" title="LinkedIn">
+                    <a href="https://www.linkedin.com/in/jeelpatel2/" target="_blank" title="LinkedIn">
                         <i class="fab fa-linkedin"></i>
                     </a>
-                    <a href="https://twitter.com" target="_blank" title="Twitter">
+                    <a href="https://x.com/jeelpatel000" target="_blank" title="Twitter">
                         <i class="fab fa-twitter"></i>
                     </a>
-                    <a href="mailto:your.email@gmail.com" title="Email">
+                    <a href="mailto:jeelpatel2161@gmail.com" title="Email">
                         <i class="fas fa-envelope"></i>
                     </a>
                 </div>
