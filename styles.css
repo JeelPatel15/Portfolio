@@ -104,6 +104,8 @@ nav {
     color: var(--accent-1);
 }
 
+
+
 /* ========================================
    HERO SECTION
    ======================================== */
@@ -535,6 +537,9 @@ nav {
     border-radius: 20px;
     font-size: 0.8rem;
     color: var(--accent-1);
+    box-shadow: 0 0 10px rgba(0, 212, 255, 0.45);
+    animation: glow 2.5s infinite ease-in-out;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .project-links {
